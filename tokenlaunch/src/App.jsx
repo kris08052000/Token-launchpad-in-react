@@ -7,6 +7,7 @@ import {
 import '@solana/wallet-adapter-react-ui/styles.css';
 import './App.css'
 import {TokenLaunchPad} from  './components/TokenLaunchPad'
+import { Token2022 } from './components/TOKEN2022';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
               <WalletMultiButton/>
               <WalletDisconnectButton/>
             </div>
-            <TokenLaunchPad></TokenLaunchPad>
+            {/* <TokenLaunchPad></TokenLaunchPad> */}
+            <Token2022></Token2022>
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
